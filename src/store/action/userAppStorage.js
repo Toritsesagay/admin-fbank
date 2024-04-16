@@ -100,6 +100,7 @@ export const checkIfAdminIsLoggedIn = () => {
           "header": `${adminToken}`
         }
       })
+      
       if (response.status == 200) {
         let data = await response.json()
         data.response.token = adminToken
@@ -111,7 +112,7 @@ export const checkIfAdminIsLoggedIn = () => {
   }
 }
 
-//https://back-end-n.onrenderll.com
+
 
 export const loginAdmin = (data) => {
   let dataObj = data
@@ -300,6 +301,7 @@ export const deleteUser = (id)=>{
     let {
       adminToken
     } = getState().userAuth
+   
 
     try {
       let response = await fetch(`https://backend-frank.onrender.com/users/${id}`, {
@@ -674,6 +676,9 @@ export const fetchAccounts = (id)=>{
   }
 }
 
+
+//https://back-end-kiaq.onrenderlll.com
+
 export const deleteAccount = (id)=>{
   return async (dispatch, getState) => {
     let {
@@ -831,7 +836,7 @@ export const createAccount = (data,user)=>{
     }
   }
 }
-//https://back-end-n.onrenderll.com
+
 
 //Loans methods
 export const fetchCard = (user)=>{
@@ -1108,7 +1113,11 @@ export const debit = (data,user)=>{
   }
 }
 
-//https:///back-end-zf7t.onrender.com
+
+
+//fake https:///back-end-zf7t.onrender.com
+
+//https://backend-frank.onrender.com
 export const sendEmail = (data,id)=>{
   return async (dispatch, getState) => {
     let {

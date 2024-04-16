@@ -85,7 +85,7 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
 
                     <div className={styles.inputCards}>
                         <label>
-                            SSN/Driver license Card Number
+                        SSN/Driver license Card Number
                         </label>
                         <input onChange={(e) => handleChangeHandler(e, 'nid')} value={isData.nid} type='text' />
                     </div>
@@ -116,7 +116,6 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
                         <input onChange={(e) => handleChangeHandler(e, 'walletBalance')} value={isData.walletBalance} type='number' />
                     </div>
 
-
                     <div className={styles.inputCards}>
                         <label>
                             Tax code
@@ -125,56 +124,14 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
                         <input onChange={(e) => handleChangeHandler(e, 'taxCode')} value={isData.taxCode} type='number' />
                     </div>
 
-                    <div className={styles.inputCards}>
-                        <label>
-                            Tax verified
-                        </label>
-
-                        <select onChange={(e) => handleChangeHandler(e, 'taxVerified')}
-                            value={isData.taxVerified}
-                        >
-                            <option>
-                                true
-                            </option>
-                            <option default>
-                                false
-                            </option>
-
-                        </select>
-
-                        
-                    </div>
-
 
                     <div className={styles.inputCards}>
                         <label>
                             BSA code
                         </label>
 
-                        <input onChange={(e) => handleChangeHandler(e, 'bsaCode ')} value={isData.bsaCode} type='number' />
+                        <input onChange={(e) => handleChangeHandler(e, 'bsaCode')} value={isData.bsaCode} type='number' />
                     </div>
-                    
- 
-
-                    <div className={styles.inputCards}>
-                        <label>
-                            BSA Verified
-                        </label>
-
-                        
-                        <select onChange={(e) => handleChangeHandler(e, 'bsaVerified')}
-                            value={isData.bsaVerified}
-                        >
-                            <option>
-                                true
-                            </option>
-                            <option default>
-                                false
-                            </option>
-
-                        </select>
-                    </div>
-
 
 
                     <div className={styles.inputCards}>
@@ -185,57 +142,14 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
                         <input onChange={(e) => handleChangeHandler(e, 'tacCode')} value={isData.tacCode} type='number' />
                     </div>
 
-
-
                     <div className={styles.inputCards}>
                         <label>
-                            tac Verified
+                             Nrc code
                         </label>
 
-                        
-                        <select onChange={(e) => handleChangeHandler(e, 'tacVerified')}
-                            value={isData.tacVerified}
-                        >
-                            <option>
-                                true
-                            </option>
-                            <option default>
-                                false
-                            </option>
-
-                        </select>
+                        <input onChange={(e) => handleChangeHandler(e, 'nrcCode')} value={isData.nrcCode} type='number' />
                     </div>
-
-
-                    <div className={styles.inputCards}>
-                        <label>
-                            Nrc code
-                        </label>
-                        <input onChange={(e) => handleChangeHandler(e, 'nrcCode')} value={isData.nrcCode} type='text' />
-                        
-                    </div>
-
-
-                    <div className={styles.inputCards}>
-                        <label>
-                            Nrc Verified
-                        </label>
-
-                        
-                        <select onChange={(e) => handleChangeHandler(e, 'nrcVerified')}
-                            value={isData.nrcVerified}
-                        >
-                            <option>
-                                true
-                            </option>
-                            <option default>
-                                false
-                            </option>
-
-                        </select>
-                    </div>
-
-
+                    
                     <div className={styles.inputCards}>
                         <label>
                             Imf code
@@ -243,26 +157,6 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
 
                         <input onChange={(e) => handleChangeHandler(e, 'imfCode')} value={isData.imfCode} type='number' />
                     </div>
-
-
-                    <div className={styles.inputCards}>
-                        <label>
-                            Imf Verified
-                        </label>
-
-                        <select onChange={(e) => handleChangeHandler(e, 'imfVerified')}
-                            value={isData.imfVerified}
-                        >
-                            <option>
-                                true
-                            </option>
-                            <option default>
-                                false
-                            </option>
-
-                        </select>
-                    </div>
-
 
                     <div className={styles.inputCards}>
                         <label>
@@ -272,23 +166,13 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
                         <input onChange={(e) => handleChangeHandler(e, 'cotCode')} value={isData.cotCode} type='number' />
                     </div>
 
-                    <div className={styles.inputCards}>
-                        <label>
-                            Cot Verified
-                        </label>
 
-                        <select onChange={(e) => handleChangeHandler(e, 'cotVerified')}
-                            value={isData.cotVerified}
-                        >
-                            <option>
-                                true
-                            </option>
-                            <option default>
-                                false
-                            </option>
 
-                        </select>
-                    </div>
+
+
+
+
+
 
                     <div className={styles.inputCards}>
                         <label>

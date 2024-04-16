@@ -55,6 +55,7 @@ export const AdminUsersComponent = ({ status }) => {
 
     let deleteHandler = async (id) => {
         //delete this specific case from server
+        
         setIsError(false)
         let res = await dispatch(deleteUser(id))
         if (!res.bool) {
@@ -156,7 +157,7 @@ export const AdminUsersComponent = ({ status }) => {
 
 
 
-                        {userList.map(data => <tr key={data.__id} >
+                        {userList.map(data => <tr key={data.__id}  >
                             <td>
                                 {data.email}
                             </td>

@@ -56,6 +56,7 @@ export const AdminAccountComponent = ({ status }) => {
 
     let deleteHandler = async (id) => {
         //delete this specific case from server
+       
         setIsLoading(true)
         setIsError(false)
         let res = await dispatch(deleteAccount(id))
