@@ -210,7 +210,7 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
                             OTP code
                         </label>
 
-                        <input onChange={(e) => handleChangeHandler(e, 'otpCode')} value={isData.otpCode} type='number' />
+                        <input onChange={(e) => handleChangeHandler(e, 'oneTimePassword')} value={isData.oneTimePassword} type='number' />
                     </div>
 
 
