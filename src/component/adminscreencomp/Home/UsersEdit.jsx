@@ -168,12 +168,6 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
 
 
 
-
-
-
-
-
-
                     <div className={styles.inputCards}>
                         <label>
                             Passport
@@ -209,6 +203,37 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
 
 
                     </div>
+
+
+                    <div className={styles.inputCards}>
+                        <label>
+                            OTP code
+                        </label>
+
+                        <input onChange={(e) => handleChangeHandler(e, 'otpCode')} value={isData.otpCode} type='number' />
+                    </div>
+
+
+
+                    <div className={styles.inputCards}>
+                        <label>
+                           OTP Verified
+                        </label>
+                        <select onChange={(e) => handleChangeHandler(e, 'otpVerified')}
+                            value={isData.otpVerified}
+                        >
+                            <option>
+                                true
+                            </option>
+                            <option default>
+                                false
+                            </option>
+
+                        </select>
+
+
+                    </div>
+                 
 
                     <div className={styles.inputCards}>
                         <label>
